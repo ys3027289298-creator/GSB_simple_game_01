@@ -13,3 +13,9 @@ A small, simple, text based game.
 
 👉 **[Start your journey today!](https://techwithtim.net/dev)**  
 No experience needed—just your determination. Future-proof your career and unlock six-figure potential like many of our students have!  
+
+# Tests
+`python3 -m unittest discover -s tests` exhaustively plays every short
+input sequence (781 paths), records each final state in
+`tests/.path_records.jsonl`, and verifies every path reaches a definite
+pass/fail end without polluting module-level state.
