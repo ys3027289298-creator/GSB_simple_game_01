@@ -13,3 +13,16 @@ A small, simple, text based game.
 
 👉 **[Start your journey today!](https://techwithtim.net/dev)**  
 No experience needed—just your determination. Future-proof your career and unlock six-figure potential like many of our students have!  
+
+# 🧪 Tests
+
+The quiz logic is split into `normalize_answer` (input normalization),
+`initial_state`/`advance` (state advancement), `finish` (score clamping
+and pass/fail outcome) and `play` (natural termination on EOF).
+
+Run the test suite (exhaustively plays every short input sequence and
+records each path's final state to `tests/path_states.jsonl`):
+
+```
+python3 -m pytest
+```
